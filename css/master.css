@@ -44,9 +44,9 @@ html{
   display: block;
   margin: auto;
   margin-top: 5px;
-  -webkit-transition: bakgroun-color .25s;
+  -webkit-transition: bakgroun-color .5s;
   /* Safari */
-  transition: background-color  .2 5s;
+  transition: background-color  .5s;
 }
 
 #Landing button:hover {
