@@ -9,6 +9,7 @@ html{
   min-height: 520px;
   display: flex;
   align-items: center;
+  transform: translateY(-40px);
   /*border: solid 2px grey;*/
 }
 
