@@ -6,6 +6,7 @@ html{
 #Landing{
   height: 100vh;
   width: 100vw;
+  min-height: 520px;
   display: flex;
   align-items: center;
   /*border: solid 2px grey;*/
@@ -76,43 +77,60 @@ html{
 }
 
 /* SCROLL ICON */
-.icon-scroll,
-.icon-scroll:before{
+#Landing2{
   position: absolute;
-  left: 50%;
+  height: 100vh;
+  width: 100vw;
+  /*background: rgba(0,0,0,.5);*/
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  visibility: visible;
+  pointer-events: none;
+  min-height: 520px;
 }
 
-.icon-scroll {
-  width: 20px;
-  height: 35px;
-  margin-left: -20px;
-  top: 95%;
-  margin-top: -35px;
-  box-shadow: inset 0 0 0 1px rgba(118,101,170, .6);
+.scroll-downs {
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 25px;
+  left: 0;
+  margin: auto;
+
+  width :34px;
+  height: 55px;
+}
+
+.mousey {
+  width: 10px;
+  padding: 10px 15px;
+  height: 55px;
+  border: 2px solid rgba(118,101,170, .6);
   border-radius: 25px;
+  opacity: 0.75;
+  bottom: 0px;
 }
 
-.icon-scroll:before {
-  Mockups: '';
-  width: 5px;
-  height: 5px;
-  background: rgba(118,101,170, .6);
-  margin-left: -2px;
-  top: 8px;
-  border-radius: 4px;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: rgba(118,101,170, .6);
   animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; transform: translate(-1px, 0);}
+  10% { transform: translate(-1px, 0); opacity: 1; }
+  100% { transform: translate(-1px, 15px); opacity: 0;}
 }
 
-@keyframes scroll {
-  0% {
-      opacity: 1;
-  }
-
-  100%{
-    opacity: 0;
-    transform: translateY(20px);
+@media (max-width: 430px) {
+  #Landing2{
+    visibility: hidden;
   }
 }
 
@@ -120,6 +138,7 @@ html{
 #Mockups{
   height: 100vh;
   width: 100vw;
+  min-height: 520px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -138,9 +157,22 @@ html{
   transform: translate(-200px, 40px);
 }
 
-#Mockups p {
-  float: left;
-  width: 100%;
+.quote{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  /*background-color: rgba(0,0,0,.5);*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  min-height: 520px;
+  transform: translateY(250px);
+}
+#Quote {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: #7665AA;
 }
 
 @media (max-width: 767px) {
@@ -151,6 +183,10 @@ html{
   #Mockups #iPhone{
     width: 110px;
     transform: translate(-150px, 25px);
+  }
+  #Quote{
+    font-size: 25px;
+    transform: translateY(-90px);
   }
 }
 
@@ -163,4 +199,42 @@ html{
     width: 22%;
     transform: translate(-120px, 25px);
   }
+  #Quote{
+    font-size: 20px;
+    transform: translateY(-120px);
+  }
+}
+
+/*CONTENT*/
+#Content {
+  /*border: solid 2px grey;*/
+  height: 100vh;
+  width 100vw;
+  margin: 45px;
+}
+
+/*FOOTER*/
+footer{
+  font-family: "Lato", sans-serif;
+  margin: 45px;
+  color: #7665AA;
+  font-size: 2px;
+}
+footer h6{
+  background-color: #7665AA;
+  display: inline;
+  color: white;
+  padding: 5px;
+}
+
+footer span{
+  color: rgba(252, 72,127, 0.8);
+}
+
+@media (max-width: 767px) {
+  footer h5{ font-size: 18px; }
+  footer h6{ font-size: 14px; }
+}
+@media (max-width: 453px) {
+  footer h6{ font-size: 10px; }
 }
