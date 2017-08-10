@@ -173,6 +173,12 @@ html{
   font-family: "Lato", sans-serif;
   font-weight: bold;
   color: #7665AA;
+  padding: 10px;
+  border-radius: 20px;
+  border-bottom: #31D1DF solid 5px;
+  border-top: #ffc447 solid 5px;
+  border-left: #7665AA solid 5px;
+  border-right: #FF477D solid 5px;
 }
 
 @media (max-width: 767px) {
@@ -213,6 +219,23 @@ html{
   margin: 45px;
 }
 
+#Content h2{
+  padding: 20px;
+  border-radius: 100px;
+  color: #FC487F;
+  font-family: "Quicksand", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  margin: auto;
+  margin-bottom:  30px;
+}
+
+@media (max-width: 580px) {
+  #Content h2{
+    font-size: 30px;
+  }
+}
+
 /*FOOTER*/
 footer{
   font-family: "Lato", sans-serif;
@@ -236,5 +259,6 @@ footer span{
   footer h6{ font-size: 14px; }
 }
 @media (max-width: 453px) {
-  footer h6{ font-size: 14px; }
+  footer h5{ font-size: 18px; }
+  footer h6{ font-size: 11px; }
 }
