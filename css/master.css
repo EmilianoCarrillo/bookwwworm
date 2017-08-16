@@ -34,6 +34,16 @@ html{
   font-weight: 200;
 }
 
+#ButtonContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#stubborn {
+  text-decoration: none;
+}
+
 #Landing button {
   background-color: white;
   border: rgba(252, 72, 127, .8) solid 2px;
@@ -48,6 +58,8 @@ html{
   -webkit-transition: bakgroun-color .5s;
   /* Safari */
   transition: background-color  .5s;
+  left: 50%;
+  text-decoration: none;
 }
 
 #Landing button:hover {

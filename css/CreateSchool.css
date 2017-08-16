@@ -1,0 +1,71 @@
+body{
+  background-color: #7665AA !important;
+  color: white !important;
+}
+
+.container{
+  padding: 100px;
+  display: flex;
+  height: 100%;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+#Logo {
+  height: 80px;
+  float: right;
+  margin-right: 25px;
+}
+
+#Title {
+  color: white;
+  font-size: 28px;
+  font-family: 'Quicksands', sans-serif;
+  margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+  #Title{
+    text-align: center;
+  }
+  #Logo{
+    display: block;
+    margin: auto;
+    width: 100%;
+    object-fit: contain;
+    padding-left: 25px;
+  }
+}
+
+#logo{
+  margin-bottom: 50px;
+}
+
+#Title{
+  text-decoration: none;
+}
+
+a:hover #Title{
+  color: #231E43;
+  text-decoration: none;
+}
+
+small{
+  color: white;
+}
+
+.admins{
+  background-color: #5e5088;
+  padding: 10px;
+}
+
+form button{
+  margin-top: 10px;
+  width: 100%;
+}
+
+.colores {
+  margin-left:15px;
+  margin-right:15px
+}

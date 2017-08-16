@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>bookwwworm</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/CreateSchool.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <!-- BOOTSTRAP -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <!--           -->
+  <!-- FAVICONS -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Quicksand:700" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../assets/favicons/manifest.json">
+  <link rel="mask-icon" href="../assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <!--          -->
+  <!-- FONTAWESOME -->
+  <script src="https://use.fontawesome.com/3ff14d84fc.js"></script>
+  <!-- -->
+</head>
+  <body>
+      <div class="container">
+        <div class="wrapper">
+          <a href="../index.html"><div id="logo" class="row">
+            <div class="col-md-6 col-xs-12 col-sm-12">
+              <img id="Logo" src="../assets/logo/bookwwworm_logo_negative.png" alt="bookwwworm logo">
+            </div>
+            <div class="col-md-6 col-xs-12 col-sm-12">
+              <h1 id="Title">bookwwworm</h1>
+            </div>
+          </div></a>
+
+
+          <form>
+            <div class="form-group">
+              <label for="escuela">Nombre de la escuela</label>
+              <input type="text" class="form-control" id="escuela" required>
+            </div>
+            <div class="form-group">
+              <label for="slogan">Slogan</label>
+              <input type="text" class="form-control" id="slogan" required>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="text" class="form-control" id="telefono" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="exampleFormControlFile1">Logo</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="exampleFormControlFile2">Foto de portada</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile2" required>
+              </div>
+            </div>
+            <div class="form-row colores">
+              <div class="form-group col-xs-6">
+                Color institucional primario:
+                <input type="color" name="favcolor" value="#ff0000" required>
+              </div>
+              <div class="form-group col-xs-6">
+                Color institucional secundario:
+                <input type="color" name="favcolor" value="#ff0000" required>
+              </div>
+            </div>
+
+
+
+            <div class="admins">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Administrador 1</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email" required>
+                <small class="emailHelp" class="form-text text-muted">Deberá ser algún administrativo confiable de la escuela.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Contraseña de admin 1</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="contraseña" required>
+              </div>
+              <hr>
+              <div class="form-group">
+                <label for="exampleInputEmail2">Administrador 2</label>
+                <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="email" required>
+                <small class="emailHelp" class="form-text text-muted">Deberá ser algún administrativo confiable de la escuela.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword2">Contraseña de admin 2</label>
+                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="contraseña" required>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Crear Plataforma</button>
+          </form>
+
+
+
+        </div>
+      </div>
+  </body>
+</html>
